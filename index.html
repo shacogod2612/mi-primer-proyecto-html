@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
         <header>
@@ -11,9 +12,9 @@
             <nav>
                 <ul>
                     <li><a href="#sobre-mi">Sobre mi</a></li>
-                    <li><a href="#proyectos">proyectos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contacto">contacto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -23,11 +24,14 @@
             <section id="sobre-mi">
 
                 <h2>Sobre mi</h2>
-                <img src="/sobre-mi.jpeg" alt="sobre mi" width="80px" height="100">
 
-                <p>Soy Jackson Vega un estudiante de desarrollo informatico , me esfuerzo
+                <div class="box-img"> 
+                    <img src="./img/sobre-mi.jpeg" alt="imagen de Jackson Vega">
+                </div>
+                
+                <p class="texto-mio">Soy Jackson Vega un estudiante de desarrollo informatico , me esfuerzo
                 en aprender sobre este campo por que desde niño siempre me ha gustado y se
-                si le pongo mi mayor empeño lograre cumplir mi meta de ser un excelente desarrollador informatico 
+                si le pongo mi mayor empeño lograre cumplir mi meta de ser un excelente desarrollador informatico. 
                 </p>
 
             </section>
@@ -35,12 +39,15 @@
             <section id="proyectos">
 
                 <h2>Proyectos</h2>
-
-                <ul>
-                    <li>Portafolio</li>
-                    <li>pagina web informativa</li>
-                    <li>registro de ventas</li>
-                </ul>
+                
+                <div class="listas">
+                    <ul>
+                        <li>Portafolio</li>
+                        <li>Pagina web informativa</li>
+                        <li>Registro de ventas</li>
+                    </ul>
+                </div>
+                
 
             </section>
 
@@ -48,27 +55,38 @@
 
                 <h2>Habilidades</h2>
 
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
+                  <div class="listas">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
 
             </section>
 
-            <section>
-                <form action="#">
+            <section class="formulario">
 
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <div class="contenedor-formulario">
+                    <form action="#">
 
-                    <label for="email">Gmail</label>
-                    <input type="email" id="email" name="email" placeholder="Gmail" required>
+                        <div class="box-form">
 
-                    <textarea name="mensaje" id="mensaje" placeholder="Escribe algo..."></textarea>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
 
-                    <button type="submit">Enviar</button>
-                </form>
+                        </div>
+                        <div class="box-form">
+                            <label for="email">Gmail</label>
+                            <input type="email" id="email" name="email" placeholder="Gmail" required>
+                        </div>
+                        
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribe algo..." aria-label="Mensaje"></textarea>
+
+                        <button type="submit">Enviar</button>
+
+                    </form>
+                </div>   
             </section>
         </main>
 

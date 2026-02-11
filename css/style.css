@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #dfdfdf;
+    color: #333;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #155730;
+    padding: 1rem 4rem;
+}
+
+header h1 {
+    color: #a2a9b1;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #a2a9b1;
+    transition: color 0.3s
+}
+
+nav a:hover {
+    color: #6d6f72;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    text-align: center;
+    color: #212222;
+}
+
+.box-img{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.box-img img {
+    width: 180px;
+    height: 200px;
+    border-radius: 15px;   
+}
+
+.texto-mio {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+.listas {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+
+/* FORMULARIOS */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-formulario {
+    width: 350px;
+    padding: 20px 20px;
+    background-color: #6eb88d;
+    border-radius:  15px;
+    margin-top: 20px;
+}
+
+.box-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+}
+label {
+    color: #000000;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 3px solid #504f4f;
+    border-radius: 5px;
+}
+
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #155730;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0a3f20;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #155730;
+    padding: 25px 0;
+}
+
+footer p {
+    text-align: center;
+    color: #a2a9b1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+    }
+    .contenedor-formulario {
+        width: 90%;
+    }
+}
